@@ -25,6 +25,9 @@
 		474BB2F51BA9464C003AEC47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 474BB2F41BA9464C003AEC47 /* Assets.xcassets */; };
 		4791D7161BA96DA000B80258 /* RowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4791D7151BA96DA000B80258 /* RowController.m */; settings = {ASSET_TAGS = (); }; };
 		4791D7191BA985FE00B80258 /* AudioRecAndPlayInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4791D7181BA985FE00B80258 /* AudioRecAndPlayInterfaceController.m */; settings = {ASSET_TAGS = (); }; };
+		4791D71C1BA98E8100B80258 /* MoviePlayInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4791D71B1BA98E8100B80258 /* MoviePlayInterfaceController.m */; settings = {ASSET_TAGS = (); }; };
+		4791D71F1BA996A500B80258 /* sample_clip1.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 4791D71E1BA996A500B80258 /* sample_clip1.m4v */; settings = {ASSET_TAGS = (); }; };
+		4791D7221BA9AF5E00B80258 /* OpenURLInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4791D7211BA9AF5E00B80258 /* OpenURLInterfaceController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +108,11 @@
 		4791D7151BA96DA000B80258 /* RowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RowController.m; sourceTree = "<group>"; };
 		4791D7171BA985FE00B80258 /* AudioRecAndPlayInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioRecAndPlayInterfaceController.h; sourceTree = "<group>"; };
 		4791D7181BA985FE00B80258 /* AudioRecAndPlayInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioRecAndPlayInterfaceController.m; sourceTree = "<group>"; };
+		4791D71A1BA98E8100B80258 /* MoviePlayInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoviePlayInterfaceController.h; sourceTree = "<group>"; };
+		4791D71B1BA98E8100B80258 /* MoviePlayInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoviePlayInterfaceController.m; sourceTree = "<group>"; };
+		4791D71E1BA996A500B80258 /* sample_clip1.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = sample_clip1.m4v; sourceTree = "<group>"; };
+		4791D7201BA9AF5E00B80258 /* OpenURLInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenURLInterfaceController.h; sourceTree = "<group>"; };
+		4791D7211BA9AF5E00B80258 /* OpenURLInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenURLInterfaceController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				4791D70F1BA9687F00B80258 /* watchos2 WatchKit Extension.entitlements */,
+				4791D71D1BA996A500B80258 /* Media */,
 				4791D7131BA96D8000B80258 /* Controllers */,
 				4791D7111BA96D3200B80258 /* ComplicationController.m */,
 				474BB2E51BA9464C003AEC47 /* InterfaceController.h */,
@@ -218,8 +227,20 @@
 				4791D7151BA96DA000B80258 /* RowController.m */,
 				4791D7171BA985FE00B80258 /* AudioRecAndPlayInterfaceController.h */,
 				4791D7181BA985FE00B80258 /* AudioRecAndPlayInterfaceController.m */,
+				4791D71A1BA98E8100B80258 /* MoviePlayInterfaceController.h */,
+				4791D71B1BA98E8100B80258 /* MoviePlayInterfaceController.m */,
+				4791D7201BA9AF5E00B80258 /* OpenURLInterfaceController.h */,
+				4791D7211BA9AF5E00B80258 /* OpenURLInterfaceController.m */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4791D71D1BA996A500B80258 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				4791D71E1BA996A500B80258 /* sample_clip1.m4v */,
+			);
+			path = Media;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -356,6 +377,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				474BB2F51BA9464C003AEC47 /* Assets.xcassets in Resources */,
+				4791D71F1BA996A500B80258 /* sample_clip1.m4v in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,9 +398,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4791D71C1BA98E8100B80258 /* MoviePlayInterfaceController.m in Sources */,
 				474BB2EA1BA9464C003AEC47 /* ExtensionDelegate.m in Sources */,
 				474BB2E71BA9464C003AEC47 /* InterfaceController.m in Sources */,
 				4791D7191BA985FE00B80258 /* AudioRecAndPlayInterfaceController.m in Sources */,
+				4791D7221BA9AF5E00B80258 /* OpenURLInterfaceController.m in Sources */,
 				4791D7161BA96DA000B80258 /* RowController.m in Sources */,
 				474BB2ED1BA9464C003AEC47 /* NotificationController.m in Sources */,
 				474BB2F01BA9464C003AEC47 /* GlanceController.m in Sources */,

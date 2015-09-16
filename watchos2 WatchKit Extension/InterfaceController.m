@@ -37,6 +37,11 @@ static NSString * kItemKeyClassPrefix = @"prefix";
                        kItemKeyClassPrefix: @"AudioRecAndPlay",
                        },
                    @{
+                       kItemKeyTitle: @"Remote Movie play",
+                       kItemKeyDetail: @"Play video from remote",
+                       kItemKeyClassPrefix: @"MoviePlay",
+                       },
+                   @{
                        kItemKeyTitle: @"Picker Styles",
                        kItemKeyDetail: @"WKInterfacePicker styles catalog.",
                        kItemKeyClassPrefix: @"PickerStyles",
@@ -57,11 +62,6 @@ static NSString * kItemKeyClassPrefix = @"prefix";
                        kItemKeyDetail: @"Open Tel or SMS app using openSystemURL: method.",
                        kItemKeyClassPrefix: @"OpenSystemURL",
                        },
-                   @{
-                       kItemKeyTitle: @"Audio File Player",
-                       kItemKeyDetail: @"Play an audio file with WKAudioFilePlayer.",
-                       kItemKeyClassPrefix: @"AudioFilePlayer",
-                       }
                    ];
     
 }

@@ -68,6 +68,62 @@
             </objects>
             <point key="canvasLocation" x="445" y="347"/>
         </scene>
+        <!--MoviePlay-->
+        <scene sceneID="v8H-Ve-8Dr">
+            <objects>
+                <controller identifier="MoviePlay" hidesWhenLoading="NO" id="dGb-PW-vMB" customClass="MoviePlayInterfaceController">
+                    <items>
+                        <group width="1" height="126" alignment="left" hidden="YES" backgroundImage="progress-0" contentMode="scaleAspectFit" id="b9p-d4-338">
+                            <items>
+                                <picker width="82" height="67" alignment="center" verticalAlignment="center" hidden="YES" id="8sh-wP-X6o"/>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" title="Local" id="c88-YK-O7L">
+                            <connections>
+                                <action selector="onLocalTapped" destination="dGb-PW-vMB" id="Y2O-r6-ar5"/>
+                            </connections>
+                        </button>
+                        <label alignment="left" text="Label" id="EBX-1d-jqY" userLabel="LocalLabel">
+                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                        </label>
+                        <button width="1" alignment="left" title="Remote" id="inN-qj-KBK">
+                            <connections>
+                                <action selector="onRemoteTapped" destination="dGb-PW-vMB" id="ICB-Iu-I0P"/>
+                            </connections>
+                        </button>
+                        <label alignment="left" text="Label" id="Vwe-P0-t9E" userLabel="RemoteLabel">
+                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="picker" destination="8sh-wP-X6o" id="zXc-IP-XKg"/>
+                        <outlet property="progressGroup" destination="b9p-d4-338" id="LVz-sI-uBh"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="658" y="347"/>
+        </scene>
+        <!--OpenSystemURL-->
+        <scene sceneID="lZj-ts-iJ2">
+            <objects>
+                <controller identifier="OpenSystemURL" hidesWhenLoading="NO" id="ClB-tA-tQM" customClass="OpenURLInterfaceController">
+                    <items>
+                        <label alignment="left" text="Open" id="8eZ-0v-WDq"/>
+                        <button width="1" alignment="left" title="Phone" id="g4l-SN-Qmv">
+                            <connections>
+                                <action selector="onPhoneTapped" destination="ClB-tA-tQM" id="JqH-Dx-ZHL"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="SMS" id="dea-gt-Fz5">
+                            <connections>
+                                <action selector="onSMSTapped" destination="ClB-tA-tQM" id="aEs-GF-Fmi"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="658" y="589"/>
+        </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
             <objects>
