@@ -38,6 +38,36 @@
             </objects>
             <point key="canvasLocation" x="235" y="347"/>
         </scene>
+        <!--AudioRecAndPlay-->
+        <scene sceneID="7kT-aJ-gl5">
+            <objects>
+                <controller identifier="AudioRecAndPlay" hidesWhenLoading="NO" id="ER9-9Z-Pcx" customClass="AudioRecAndPlayInterfaceController">
+                    <items>
+                        <button width="1" alignment="left" title="Record" id="Tdh-m2-7se">
+                            <connections>
+                                <action selector="onRecordTapped" destination="ER9-9Z-Pcx" id="asd-2i-aEX"/>
+                            </connections>
+                        </button>
+                        <label alignment="left" text="Label" numberOfLines="0" id="XZ0-GQ-ZqZ" userLabel="RecLabel">
+                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                        </label>
+                        <button width="1" alignment="left" title="Play" id="R6e-z7-fvP">
+                            <connections>
+                                <action selector="onPlayTapped" destination="ER9-9Z-Pcx" id="4bG-3S-grl"/>
+                            </connections>
+                        </button>
+                        <label alignment="left" text="Label" numberOfLines="0" id="2W5-4M-Onr" userLabel="PlayLabel">
+                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="playLabel" destination="2W5-4M-Onr" id="n5q-rq-Fom"/>
+                        <outlet property="recordLabel" destination="XZ0-GQ-ZqZ" id="lKq-4E-aTg"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="445" y="347"/>
+        </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
             <objects>

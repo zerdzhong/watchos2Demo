@@ -24,6 +24,7 @@
 		474BB2F31BA9464C003AEC47 /* ComplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 474BB2F21BA9464C003AEC47 /* ComplicationController.m */; };
 		474BB2F51BA9464C003AEC47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 474BB2F41BA9464C003AEC47 /* Assets.xcassets */; };
 		4791D7161BA96DA000B80258 /* RowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4791D7151BA96DA000B80258 /* RowController.m */; settings = {ASSET_TAGS = (); }; };
+		4791D7191BA985FE00B80258 /* AudioRecAndPlayInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4791D7181BA985FE00B80258 /* AudioRecAndPlayInterfaceController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +103,8 @@
 		4791D7111BA96D3200B80258 /* ComplicationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComplicationController.m; sourceTree = "<group>"; };
 		4791D7141BA96DA000B80258 /* RowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RowController.h; sourceTree = "<group>"; };
 		4791D7151BA96DA000B80258 /* RowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RowController.m; sourceTree = "<group>"; };
+		4791D7171BA985FE00B80258 /* AudioRecAndPlayInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioRecAndPlayInterfaceController.h; sourceTree = "<group>"; };
+		4791D7181BA985FE00B80258 /* AudioRecAndPlayInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioRecAndPlayInterfaceController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +216,8 @@
 			children = (
 				4791D7141BA96DA000B80258 /* RowController.h */,
 				4791D7151BA96DA000B80258 /* RowController.m */,
+				4791D7171BA985FE00B80258 /* AudioRecAndPlayInterfaceController.h */,
+				4791D7181BA985FE00B80258 /* AudioRecAndPlayInterfaceController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -373,6 +378,7 @@
 			files = (
 				474BB2EA1BA9464C003AEC47 /* ExtensionDelegate.m in Sources */,
 				474BB2E71BA9464C003AEC47 /* InterfaceController.m in Sources */,
+				4791D7191BA985FE00B80258 /* AudioRecAndPlayInterfaceController.m in Sources */,
 				4791D7161BA96DA000B80258 /* RowController.m in Sources */,
 				474BB2ED1BA9464C003AEC47 /* NotificationController.m in Sources */,
 				474BB2F01BA9464C003AEC47 /* GlanceController.m in Sources */,

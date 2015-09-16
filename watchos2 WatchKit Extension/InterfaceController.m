@@ -90,6 +90,13 @@ static NSString * kItemKeyClassPrefix = @"prefix";
     }
 }
 
+#pragma mark- WKInterfaceTableDelegate
+-(void)table:(WKInterfaceTable *)table didSelectRowAtIndex:(NSInteger)rowIndex
+{
+    NSString *classPrefix = [[self.items objectAtIndex:rowIndex] objectForKey:kItemKeyClassPrefix];
+    [self pushControllerWithName:classPrefix context:nil];
+}
+
 @end
 
 
