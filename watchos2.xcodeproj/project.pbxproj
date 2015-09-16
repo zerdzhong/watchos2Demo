@@ -23,6 +23,7 @@
 		474BB2F01BA9464C003AEC47 /* GlanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 474BB2EF1BA9464C003AEC47 /* GlanceController.m */; };
 		474BB2F31BA9464C003AEC47 /* ComplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 474BB2F21BA9464C003AEC47 /* ComplicationController.m */; };
 		474BB2F51BA9464C003AEC47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 474BB2F41BA9464C003AEC47 /* Assets.xcassets */; };
+		4791D7161BA96DA000B80258 /* RowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4791D7151BA96DA000B80258 /* RowController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,11 @@
 		474BB2F21BA9464C003AEC47 /* ComplicationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComplicationController.m; sourceTree = "<group>"; };
 		474BB2F41BA9464C003AEC47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		474BB2F61BA9464C003AEC47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4791D70F1BA9687F00B80258 /* watchos2 WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "watchos2 WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		4791D7101BA9692300B80258 /* watchos2 WatchKit App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "watchos2 WatchKit App.entitlements"; sourceTree = "<group>"; };
+		4791D7111BA96D3200B80258 /* ComplicationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComplicationController.m; sourceTree = "<group>"; };
+		4791D7141BA96DA000B80258 /* RowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RowController.h; sourceTree = "<group>"; };
+		4791D7151BA96DA000B80258 /* RowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RowController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +169,7 @@
 		474BB2D31BA9464C003AEC47 /* watchos2 WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
+				4791D7101BA9692300B80258 /* watchos2 WatchKit App.entitlements */,
 				474BB2D41BA9464C003AEC47 /* Interface.storyboard */,
 				474BB2D71BA9464C003AEC47 /* Assets.xcassets */,
 				474BB2D91BA9464C003AEC47 /* Info.plist */,
@@ -173,6 +180,9 @@
 		474BB2E21BA9464C003AEC47 /* watchos2 WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				4791D70F1BA9687F00B80258 /* watchos2 WatchKit Extension.entitlements */,
+				4791D7131BA96D8000B80258 /* Controllers */,
+				4791D7111BA96D3200B80258 /* ComplicationController.m */,
 				474BB2E51BA9464C003AEC47 /* InterfaceController.h */,
 				474BB2E61BA9464C003AEC47 /* InterfaceController.m */,
 				474BB2E81BA9464C003AEC47 /* ExtensionDelegate.h */,
@@ -196,6 +206,15 @@
 				474BB2E41BA9464C003AEC47 /* PushNotificationPayload.apns */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4791D7131BA96D8000B80258 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4791D7141BA96DA000B80258 /* RowController.h */,
+				4791D7151BA96DA000B80258 /* RowController.m */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,12 +284,25 @@
 				TargetAttributes = {
 					474BB2B71BA9464B003AEC47 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = WY2GX9YNYL;
 					};
 					474BB2CE1BA9464C003AEC47 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = WY2GX9YNYL;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					474BB2DD1BA9464C003AEC47 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = WY2GX9YNYL;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -341,6 +373,7 @@
 			files = (
 				474BB2EA1BA9464C003AEC47 /* ExtensionDelegate.m in Sources */,
 				474BB2E71BA9464C003AEC47 /* InterfaceController.m in Sources */,
+				4791D7161BA96DA000B80258 /* RowController.m in Sources */,
 				474BB2ED1BA9464C003AEC47 /* NotificationController.m in Sources */,
 				474BB2F01BA9464C003AEC47 /* GlanceController.m in Sources */,
 				474BB2F31BA9464C003AEC47 /* ComplicationController.m in Sources */,
@@ -476,10 +509,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "watchos2 WatchKit Extension/watchos2 WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "watchos2 WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tudou.watchos2.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -491,10 +528,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "watchos2 WatchKit Extension/watchos2 WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "watchos2 WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tudou.watchos2.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -506,10 +547,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "watchos2 WatchKit App/watchos2 WatchKit App.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				IBSC_MODULE = watchos2_WatchKit_Extension;
 				INFOPLIST_FILE = "watchos2 WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tudou.watchos2.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -521,10 +566,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "watchos2 WatchKit App/watchos2 WatchKit App.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				IBSC_MODULE = watchos2_WatchKit_Extension;
 				INFOPLIST_FILE = "watchos2 WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tudou.watchos2.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -536,6 +585,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = watchos2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tudou.watchos2;
@@ -547,6 +597,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = watchos2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tudou.watchos2;
@@ -573,6 +624,7 @@
 				474BB2FB1BA9464C003AEC47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		474BB2FD1BA9464C003AEC47 /* Build configuration list for PBXNativeTarget "watchos2 WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -581,6 +633,7 @@
 				474BB2FF1BA9464C003AEC47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		474BB3011BA9464C003AEC47 /* Build configuration list for PBXNativeTarget "watchos2" */ = {
 			isa = XCConfigurationList;
@@ -589,6 +642,7 @@
 				474BB3031BA9464C003AEC47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
