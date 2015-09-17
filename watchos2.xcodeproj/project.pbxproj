@@ -28,6 +28,8 @@
 		4791D71C1BA98E8100B80258 /* MoviePlayInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4791D71B1BA98E8100B80258 /* MoviePlayInterfaceController.m */; settings = {ASSET_TAGS = (); }; };
 		4791D71F1BA996A500B80258 /* sample_clip1.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 4791D71E1BA996A500B80258 /* sample_clip1.m4v */; settings = {ASSET_TAGS = (); }; };
 		4791D7221BA9AF5E00B80258 /* OpenURLInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4791D7211BA9AF5E00B80258 /* OpenURLInterfaceController.m */; settings = {ASSET_TAGS = (); }; };
+		4791D7251BA9B36600B80258 /* PickerStylesInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4791D7241BA9B36600B80258 /* PickerStylesInterfaceController.m */; settings = {ASSET_TAGS = (); }; };
+		4791D7281BA9B8B900B80258 /* AlertInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4791D7271BA9B8B900B80258 /* AlertInterfaceController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +115,10 @@
 		4791D71E1BA996A500B80258 /* sample_clip1.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = sample_clip1.m4v; sourceTree = "<group>"; };
 		4791D7201BA9AF5E00B80258 /* OpenURLInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenURLInterfaceController.h; sourceTree = "<group>"; };
 		4791D7211BA9AF5E00B80258 /* OpenURLInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenURLInterfaceController.m; sourceTree = "<group>"; };
+		4791D7231BA9B36600B80258 /* PickerStylesInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerStylesInterfaceController.h; sourceTree = "<group>"; };
+		4791D7241BA9B36600B80258 /* PickerStylesInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerStylesInterfaceController.m; sourceTree = "<group>"; };
+		4791D7261BA9B8B900B80258 /* AlertInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertInterfaceController.h; sourceTree = "<group>"; };
+		4791D7271BA9B8B900B80258 /* AlertInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertInterfaceController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +237,10 @@
 				4791D71B1BA98E8100B80258 /* MoviePlayInterfaceController.m */,
 				4791D7201BA9AF5E00B80258 /* OpenURLInterfaceController.h */,
 				4791D7211BA9AF5E00B80258 /* OpenURLInterfaceController.m */,
+				4791D7231BA9B36600B80258 /* PickerStylesInterfaceController.h */,
+				4791D7241BA9B36600B80258 /* PickerStylesInterfaceController.m */,
+				4791D7261BA9B8B900B80258 /* AlertInterfaceController.h */,
+				4791D7271BA9B8B900B80258 /* AlertInterfaceController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -401,9 +411,11 @@
 				4791D71C1BA98E8100B80258 /* MoviePlayInterfaceController.m in Sources */,
 				474BB2EA1BA9464C003AEC47 /* ExtensionDelegate.m in Sources */,
 				474BB2E71BA9464C003AEC47 /* InterfaceController.m in Sources */,
+				4791D7251BA9B36600B80258 /* PickerStylesInterfaceController.m in Sources */,
 				4791D7191BA985FE00B80258 /* AudioRecAndPlayInterfaceController.m in Sources */,
 				4791D7221BA9AF5E00B80258 /* OpenURLInterfaceController.m in Sources */,
 				4791D7161BA96DA000B80258 /* RowController.m in Sources */,
+				4791D7281BA9B8B900B80258 /* AlertInterfaceController.m in Sources */,
 				474BB2ED1BA9464C003AEC47 /* NotificationController.m in Sources */,
 				474BB2F01BA9464C003AEC47 /* GlanceController.m in Sources */,
 				474BB2F31BA9464C003AEC47 /* ComplicationController.m in Sources */,

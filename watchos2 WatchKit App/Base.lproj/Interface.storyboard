@@ -109,11 +109,6 @@
                 <controller identifier="OpenSystemURL" hidesWhenLoading="NO" id="ClB-tA-tQM" customClass="OpenURLInterfaceController">
                     <items>
                         <label alignment="left" text="Open" id="8eZ-0v-WDq"/>
-                        <button width="1" alignment="left" title="Phone" id="g4l-SN-Qmv">
-                            <connections>
-                                <action selector="onPhoneTapped" destination="ClB-tA-tQM" id="JqH-Dx-ZHL"/>
-                            </connections>
-                        </button>
                         <button width="1" alignment="left" title="SMS" id="dea-gt-Fz5">
                             <connections>
                                 <action selector="onSMSTapped" destination="ClB-tA-tQM" id="aEs-GF-Fmi"/>
@@ -122,7 +117,28 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="658" y="589"/>
+            <point key="canvasLocation" x="847" y="347"/>
+        </scene>
+        <!--PickerStyles-->
+        <scene sceneID="48b-bE-WfM">
+            <objects>
+                <controller identifier="PickerStyles" hidesWhenLoading="NO" id="c9V-Ed-pBp" customClass="PickerStylesInterfaceController">
+                    <items>
+                        <label alignment="left" text="List" id="loJ-tv-by3"/>
+                        <picker width="1" height="100" alignment="left" focusStyle="sequence" indicatorMode="shownWhileFocused" id="Pc1-hZ-JQ9"/>
+                        <label alignment="left" text="Stack" id="K4D-lg-OpI"/>
+                        <picker width="1" height="100" alignment="left" style="stack" focusStyle="sequence" indicatorMode="shownWhileFocused" id="KWQ-gP-IYp"/>
+                        <label alignment="left" text="Sequence" id="U72-ER-Esz"/>
+                        <picker width="1" height="100" alignment="left" style="sequence" focusStyle="sequence" indicatorMode="shownWhileFocused" id="tyi-Rm-JsX"/>
+                    </items>
+                    <connections>
+                        <outlet property="listPicker" destination="Pc1-hZ-JQ9" id="4tO-wQ-HO9"/>
+                        <outlet property="sequencePicker" destination="tyi-Rm-JsX" id="dhM-W1-mke"/>
+                        <outlet property="stackPicker" destination="KWQ-gP-IYp" id="fKg-9h-Bhw"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="658" y="705.75"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
@@ -136,6 +152,32 @@
                 </glanceController>
             </objects>
             <point key="canvasLocation" x="235" y="672"/>
+        </scene>
+        <!--Alert-->
+        <scene sceneID="S8L-Qc-5x0">
+            <objects>
+                <controller identifier="Alert" hidesWhenLoading="NO" id="vux-R6-ddT" customClass="AlertInterfaceController">
+                    <items>
+                        <button width="1" alignment="left" title="Alert" id="zOb-Tt-VYu">
+                            <connections>
+                                <action selector="onAlertTapped" destination="vux-R6-ddT" id="4s4-8l-IX0"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="SideBySideButtonsAlert" id="Tf7-08-oQC">
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                            <connections>
+                                <action selector="onSideTapped" destination="vux-R6-ddT" id="KMc-vr-DaI"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="ActionSheet" id="5IU-9f-BZ0">
+                            <connections>
+                                <action selector="onActionSheetTapped" destination="vux-R6-ddT" id="eEJ-tM-yHi"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="445" y="592"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
